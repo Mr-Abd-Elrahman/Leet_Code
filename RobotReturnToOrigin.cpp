@@ -78,10 +78,40 @@ public:
     }
 };
 
+class clsSolution
+{
+public:
+    bool judgeCircle(std::string moves)
+    {
+        int x = 0;
+        int y = 0;
+
+        for (char C : moves)
+        {
+            if (C == 'U')
+            {
+                y++;
+            }
+            else if (C == 'D')
+            {
+                y--;
+            }
+            else if (C == 'R')
+            {
+                x++;
+            }
+            else if (C == 'L')
+            {
+                x--;
+            }
+        }
+        return x == 0 && y == 0;
+    }
+};
 int main()
 {
     std::string moves = "LL";
-    SecondSolution Solution1;
+    clsSolution Solution1;
 
     if (Solution1.judgeCircle(moves))
     {
