@@ -1,5 +1,10 @@
 #include <iostream>
 
+// you are given a string "world"
+// output "dlrow"
+
+// note : size and lenght  do the same thing but size is general for a lot of things (vectors ,strings , array)
+// length is specific for strings
 class Solution
 {
 public:

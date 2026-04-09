@@ -28,7 +28,7 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of t
 
 Constraints:
 
-1 <= moves.length <= 2 * 104
+1 <= moves.length <= 2 * 10power4
 moves only contains the characters 'U', 'D', 'L' and 'R'*/
 
 class Solution

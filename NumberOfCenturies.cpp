@@ -17,7 +17,14 @@ class Solution
 public:
     int CenturyFromYear(int Year)
     {
-
+        // if (Year % 100 == 0)
+        // {
+        //     return Year / 100;
+        // }
+        // else
+        // {
+        //     return Year / 100 + 1;
+        // }
         return Year % 100 == 0 ? Year / 100 : Year / 100 + 1;
     }
 };
@@ -33,12 +40,13 @@ public:
 int main()
 {
 
-    int Year = 2005.0f;
+    float Year = 2026;
 
     Solution S1;
     SecondSolution S2;
-    std::cout << S1.CenturyFromYear(Year) << std::endl;
-    std::cout << S2.CenturyFromYear(Year) << std::endl;
+    std::cout << "Century is : " << S1.CenturyFromYear(Year) << std::endl;
+
+    std::cout << "Century is : " << S2.CenturyFromYear(Year) << std::endl;
     std::cin.get();
 
     return 0;

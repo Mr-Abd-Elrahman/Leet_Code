@@ -3,10 +3,23 @@
 
 class Solution
 {
-public:
+private:
     bool IsDivisible(int n, int x, int y)
     {
         return n % x == 0 && n % y == 0;
+    }
+
+public:
+    void PrintIsDivisibleResult(int n, int x, int y)
+    {
+        if (IsDivisible(n, x, y))
+        {
+            std::cout << "true";
+        }
+        else
+        {
+            std::cout << "false";
+        }
     }
 };
 
@@ -16,14 +29,8 @@ int main()
     int n = 3;
     int x = 1;
     int y = 4;
-    if (s.IsDivisible(n, x, y))
-    {
-        std::cout << "True";
-    }
-    else
-    {
-        std::cout << "False";
-    }
+
+    s.PrintIsDivisibleResult(n, x, y);
 
     std::cin.get();
 }

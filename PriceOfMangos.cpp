@@ -29,5 +29,10 @@ int main()
 {
     Sol s;
 
+    int quantity = 6; // two of them are a gift and the other five are paid
+    int price = 5;
+
+    std::cout << "Price of the mango : " << s.Mangos(quantity, price) << std::endl;
+
     std::cin.get();
 }

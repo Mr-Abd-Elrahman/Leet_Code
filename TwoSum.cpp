@@ -53,6 +53,7 @@ public:
                     result.push_back(i);
                     result.push_back(j);
                     return result;
+                    // return {i,j};
                 }
             }
         }
@@ -63,11 +64,12 @@ public:
     {
         vector<int> result = TwoSum(nums, target);
 
-        for (int i = 0; i < result.size(); i++)
-        {
+        cout << "[" << result[0] << "," << result[1] << "]";
 
-            cout << result[i] << " ";
-        }
+        // for (int i = 0; i < result.size(); i++)
+        // {
+        //     cout << result[i] << " ";
+        // }
     }
 };
 
@@ -77,7 +79,7 @@ int main()
 
     vector<int> nums = {2, 7, 11, 15};
 
-    int target = 9;
+    int target = 18;
 
     S1.PrintResult(nums, target);
 
