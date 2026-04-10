@@ -10,7 +10,7 @@ class Solution
 public:
     std::string ReverseString(std::string w)
     {
-        std::string Reversed;
+        std::string Reversed = "";
 
         for (int i = w.size() - 1; i >= 0; i--)
         {
