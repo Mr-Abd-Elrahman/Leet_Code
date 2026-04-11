@@ -1,6 +1,6 @@
 #include <iostream>
 
-// you are given an integer number represents a month and you should find in which quarter that month is
+// you are given an integer number represents a month and you should find in which quarter of the year that month is
 
 class Solution
 {
